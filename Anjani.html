@@ -1,0 +1,2416 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Untukmu di Hari Ulang Tahunmu ❤️</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  background:
+    radial-gradient(circle at 10% 10%, #ffb6c9 0%, transparent 35%),
+    radial-gradient(circle at 90% 90%, #ffc8dd 0%, transparent 35%),
+    radial-gradient(circle at 50% 50%, #ff91ad 0%, transparent 40%),
+    linear-gradient(135deg, #f84f7c, #ff7fa0, #ffc2d1);
+}
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+#hearts {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.heart {
+  position: absolute;
+  bottom: -60px;
+  animation: floatHeart linear forwards;
+  opacity: .7;
+}
+
+@keyframes floatHeart {
+  0% {
+    transform: translateY(0) rotate(0);
+    opacity: 0;
+  }
+
+  15% {
+    opacity: .8;
+  }
+
+  100% {
+    transform: translateY(-115vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* =========================
+   AUDIO BUTTON
+========================= */
+
+.audio-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+
+  width: 55px;
+  height: 55px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(255,255,255,.9);
+  color: #f84f7c;
+
+  font-size: 24px;
+
+  cursor: pointer;
+
+  z-index: 10000;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,.2);
+
+  transition: .3s;
+}
+
+.audio-button:hover {
+  transform: scale(1.1);
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+  position: relative;
+  z-index: 2;
+
+  width: min(900px, 94%);
+
+  margin: auto;
+
+  padding:
+    30px 0 70px;
+}
+
+section {
+  margin-bottom: 35px;
+}
+
+.card {
+  background:
+    rgba(255,255,255,.16);
+
+  border:
+    1px solid rgba(255,255,255,.3);
+
+  backdrop-filter:
+    blur(16px);
+
+  -webkit-backdrop-filter:
+    blur(16px);
+
+  border-radius: 30px;
+
+  padding:
+    32px 26px;
+
+  box-shadow:
+    0 20px 60px
+    rgba(100,0,30,.2);
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.title {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.title h1,
+.title h2,
+.gift-title {
+  font-family: 'Pacifico', cursive;
+
+  text-shadow:
+    0 8px 25px
+    rgba(90,0,30,.25);
+}
+
+.title h1 {
+  font-size:
+    clamp(40px,10vw,78px);
+}
+
+.title h2 {
+  font-size:
+    clamp(30px,7vw,48px);
+}
+
+.title p {
+  margin-top: 12px;
+  line-height: 1.9;
+}
+
+/* =========================
+   PHOTO
+========================= */
+
+.photo-section {
+  text-align: center;
+}
+
+.photo-frame {
+  display: inline-block;
+
+  padding: 9px;
+
+  background: white;
+
+  border-radius: 25px;
+
+  box-shadow:
+    0 20px 50px
+    rgba(0,0,0,.25);
+
+  transform: rotate(-2deg);
+
+  transition: .5s;
+}
+
+.photo-frame:hover {
+  transform:
+    rotate(0deg)
+    scale(1.03);
+}
+
+.photo-frame img {
+  display: block;
+
+  width:
+    min(350px,80vw);
+
+  height:
+    min(450px,105vw);
+
+  object-fit: cover;
+
+  border-radius: 18px;
+}
+
+.photo-caption {
+  margin-top: 22px;
+  font-style: italic;
+  opacity: .9;
+}
+
+/* =========================
+   LETTER
+========================= */
+
+.letter {
+  background:
+    rgba(255,255,255,.10);
+
+  border-radius: 25px;
+
+  padding: 28px;
+
+  line-height: 2.05;
+
+  font-size: 15.5px;
+}
+
+.letter p {
+  margin-bottom: 23px;
+}
+
+.highlight {
+  font-weight: 700;
+
+  text-shadow:
+    0 3px 15px
+    rgba(255,255,255,.5);
+}
+
+.center {
+  text-align: center;
+}
+
+/* =========================
+   QUOTE
+========================= */
+
+.quote {
+  margin: 30px 0;
+
+  padding: 25px;
+
+  border-left:
+    4px solid
+    rgba(255,255,255,.8);
+
+  background:
+    rgba(255,255,255,.08);
+
+  border-radius: 15px;
+
+  font-style: italic;
+
+  line-height: 2;
+}
+
+/* =========================
+   WISHES
+========================= */
+
+.wishes {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2,1fr);
+
+  gap: 15px;
+}
+
+.wish {
+  padding: 22px;
+
+  border-radius: 20px;
+
+  background:
+    rgba(255,255,255,.11);
+
+  text-align: center;
+
+  line-height: 1.8;
+}
+
+.wish-icon {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   CAKE
+========================= */
+
+.cake-section {
+  text-align: center;
+  overflow: hidden;
+}
+
+.cake-area {
+  position: relative;
+
+  width: 380px;
+  max-width: 100%;
+
+  height: 510px;
+
+  margin: 30px auto 0;
+}
+
+.cake {
+  position: absolute;
+
+  width: 310px;
+  height: 340px;
+
+  left: 50%;
+  bottom: 45px;
+
+  transform:
+    translateX(-50%);
+}
+
+.layer {
+  position: absolute;
+
+  left: 50%;
+
+  transform:
+    translateX(-50%);
+
+  border-radius:
+    50% / 20%;
+
+  border:
+    4px solid #fff0df;
+
+  background:
+    linear-gradient(
+      180deg,
+      #d98750,
+      #9d4829
+    );
+
+  box-shadow:
+    0 12px 25px
+    rgba(0,0,0,.25);
+}
+
+.layer-1 {
+  width: 270px;
+  height: 70px;
+  bottom: 0;
+}
+
+.layer-2 {
+  width: 225px;
+  height: 68px;
+  bottom: 58px;
+}
+
+.layer-3 {
+  width: 185px;
+  height: 65px;
+  bottom: 114px;
+}
+
+.layer-4 {
+  width: 145px;
+  height: 63px;
+  bottom: 168px;
+}
+
+.cream {
+  position: absolute;
+
+  width:
+    calc(100% + 10px);
+
+  height: 35px;
+
+  left: -5px;
+  top: -16px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fffdf9,
+      #ffd9e5
+    );
+
+  border-radius: 50%;
+
+  box-shadow:
+    0 5px 10px
+    rgba(0,0,0,.12);
+}
+
+.decor {
+  position: relative;
+
+  z-index: 5;
+
+  padding-top: 20px;
+
+  font-size: 22px;
+}
+
+/* =========================
+   CANDLES
+========================= */
+
+.candles {
+  position: absolute;
+
+  left: 50%;
+  bottom: 275px;
+
+  transform:
+    translateX(-50%);
+
+  display: flex;
+
+  gap: 35px;
+
+  z-index: 30;
+}
+
+.candle {
+  position: relative;
+
+  font-size: 48px;
+
+  animation:
+    candleAppear
+    1s ease forwards;
+}
+
+.candle:nth-child(2) {
+  animation-delay: .3s;
+}
+
+@keyframes candleAppear {
+  from {
+    opacity: 0;
+    transform:
+      translateY(40px)
+      scale(.5);
+  }
+
+  to {
+    opacity: 1;
+    transform:
+      translateY(0)
+      scale(1);
+  }
+}
+
+.flame {
+  position: absolute;
+
+  top: -27px;
+  left: 50%;
+
+  transform:
+    translateX(-50%);
+
+  font-size: 31px;
+
+  animation:
+    flameFlicker
+    .45s
+    ease-in-out
+    infinite alternate;
+}
+
+@keyframes flameFlicker {
+  from {
+    transform:
+      translateX(-50%)
+      scale(1)
+      rotate(-5deg);
+
+    filter:
+      drop-shadow(
+        0 0 5px #ffb300
+      );
+  }
+
+  to {
+    transform:
+      translateX(-50%)
+      scale(1.25)
+      rotate(5deg);
+
+    filter:
+      drop-shadow(
+        0 0 20px #ff9800
+      );
+  }
+}
+
+.candle-note {
+  line-height: 1.8;
+  opacity: .9;
+}
+
+/* =========================
+   GIFT
+========================= */
+
+.gift-section {
+  text-align: center;
+  overflow: hidden;
+}
+
+.gift-title {
+  font-size:
+    clamp(32px,7vw,45px);
+}
+
+.gift-area {
+  position: relative;
+
+  width: 100%;
+  height: 470px;
+
+  margin-top: 25px;
+}
+
+/* =========================
+   FLOWERS
+========================= */
+
+.flowers {
+  position: absolute;
+
+  left: 50%;
+  bottom: 105px;
+
+  transform:
+    translateX(-50%)
+    scale(.95);
+
+  width: 350px;
+  height: 280px;
+
+  opacity: 0;
+
+  pointer-events: none;
+
+  z-index: 5;
+}
+
+.flowers.show {
+  opacity: 1;
+
+  animation:
+    flowerAppear
+    1s ease forwards;
+}
+
+@keyframes flowerAppear {
+  from {
+    transform:
+      translateX(-50%)
+      translateY(100px)
+      scale(.3);
+
+    opacity: 0;
+  }
+
+  to {
+    transform:
+      translateX(-50%)
+      translateY(0)
+      scale(.95);
+
+    opacity: 1;
+  }
+}
+
+.tulip {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform-origin: bottom;
+}
+
+.stem {
+  width: 5px;
+  height: 150px;
+
+  margin: auto;
+
+  background:
+    linear-gradient(
+      90deg,
+      #287b45,
+      #51b96d
+    );
+
+  border-radius: 5px;
+}
+
+.leaf {
+  position: absolute;
+
+  width: 40px;
+  height: 17px;
+
+  background: #42a761;
+
+  border-radius:
+    100% 0 100% 0;
+}
+
+.leaf.left {
+  left: -30px;
+  top: 80px;
+
+  transform:
+    rotate(-30deg);
+}
+
+.leaf.right {
+  right: -30px;
+  top: 105px;
+
+  transform:
+    rotate(30deg)
+    scaleX(-1);
+}
+
+.tulip-head {
+  position: absolute;
+
+  top: -20px;
+  left: 50%;
+
+  transform:
+    translateX(-50%);
+
+  font-size: 52px;
+
+  filter:
+    drop-shadow(
+      0 5px 6px
+      rgba(0,0,0,.2)
+    );
+}
+
+.tulip-1 {
+  margin-left: -105px;
+  transform: rotate(-12deg);
+}
+
+.tulip-2 {
+  margin-left: -35px;
+  transform: rotate(-5deg);
+}
+
+.tulip-3 {
+  margin-left: 35px;
+  transform: rotate(5deg);
+}
+
+.tulip-4 {
+  margin-left: 105px;
+  transform: rotate(12deg);
+}
+
+.marigold {
+  position: absolute;
+
+  font-size: 40px;
+
+  animation:
+    marigoldFloat
+    1.8s
+    ease-in-out
+    infinite alternate;
+}
+
+.m1 {
+  left: 20px;
+  top: 100px;
+}
+
+.m2 {
+  right: 20px;
+  top: 95px;
+}
+
+.m3 {
+  left: 70px;
+  top: 45px;
+}
+
+.m4 {
+  right: 70px;
+  top: 40px;
+}
+
+@keyframes marigoldFloat {
+  from {
+    transform:
+      translateY(0)
+      rotate(-5deg);
+  }
+
+  to {
+    transform:
+      translateY(-8px)
+      rotate(5deg);
+  }
+}
+
+/* =========================
+   GIFT BOX
+========================= */
+
+.gift-box {
+  position: absolute;
+
+  width: 215px;
+  height: 180px;
+
+  left: 50%;
+  bottom: 30px;
+
+  transform:
+    translateX(-50%);
+
+  cursor: pointer;
+
+  z-index: 20;
+
+  transition: .4s;
+}
+
+.gift-box:hover {
+  transform:
+    translateX(-50%)
+    translateY(-8px)
+    scale(1.05);
+}
+
+.gift-body {
+  position: absolute;
+
+  width: 175px;
+  height: 125px;
+
+  left: 20px;
+  bottom: 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ff1744,
+      #e91e63
+    );
+
+  border-radius:
+    8px 8px 18px 18px;
+
+  box-shadow:
+    0 20px 40px
+    rgba(0,0,0,.25);
+}
+
+.gift-lid {
+  position: absolute;
+
+  width: 200px;
+  height: 45px;
+
+  left: 7px;
+  top: 15px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ff4f81,
+      #ff1744
+    );
+
+  border-radius: 10px;
+
+  z-index: 5;
+
+  transition:
+    transform .9s
+    cubic-bezier(.2,.8,.2,1);
+}
+
+.gift-lid.open {
+  transform:
+    translateY(-100px)
+    rotate(-10deg);
+}
+
+.ribbon-v {
+  position: absolute;
+
+  width: 32px;
+  height: 125px;
+
+  left: 72px;
+  bottom: 0;
+
+  background: #ffd166;
+
+  z-index: 3;
+}
+
+.ribbon-h {
+  position: absolute;
+
+  width: 175px;
+  height: 25px;
+
+  left: 20px;
+  bottom: 48px;
+
+  background: #ffd166;
+
+  z-index: 4;
+}
+
+.bow-left,
+.bow-right {
+  position: absolute;
+
+  width: 67px;
+  height: 46px;
+
+  top: -5px;
+
+  background: #ffd166;
+
+  z-index: 8;
+
+  border-radius: 50%;
+}
+
+.bow-left {
+  left: 35px;
+  transform: rotate(25deg);
+}
+
+.bow-right {
+  right: 35px;
+  transform: rotate(-25deg);
+}
+
+/* =========================
+   GIFT MESSAGE
+========================= */
+
+.gift-message {
+  display: none;
+
+  margin-top: 20px;
+
+  padding: 28px;
+
+  border-radius: 25px;
+
+  background:
+    rgba(255,255,255,.13);
+
+  border:
+    1px solid
+    rgba(255,255,255,.25);
+
+  line-height: 1.9;
+
+  animation:
+    messageAppear
+    1s ease;
+}
+
+@keyframes messageAppear {
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(30px)
+      scale(.9);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0)
+      scale(1);
+  }
+}
+
+.gift-message h3 {
+  font-family: 'Pacifico', cursive;
+
+  font-size: 32px;
+
+  margin-bottom: 15px;
+}
+
+.gift-message p {
+  margin-bottom: 18px;
+}
+
+.big-flower {
+  font-size: 55px;
+  margin: 15px 0;
+}
+
+/* =========================
+   FINAL
+========================= */
+
+.final-heart {
+  text-align: center;
+
+  font-size: 80px;
+
+  animation:
+    heartbeat
+    1.2s
+    infinite;
+}
+
+@keyframes heartbeat {
+  0%,100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.18);
+  }
+}
+
+.final-text {
+  text-align: center;
+  line-height: 2;
+}
+
+footer {
+  text-align: center;
+
+  opacity: .8;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+/* =========================
+   CONFETTI
+========================= */
+
+.confetti {
+  position: fixed;
+
+  top: -20px;
+
+  width: 9px;
+  height: 9px;
+
+  z-index: 9999;
+
+  pointer-events: none;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:600px) {
+
+  .container {
+    width: 94%;
+  }
+
+  .card {
+    padding: 24px 17px;
+  }
+
+  .letter {
+    padding: 20px;
+
+    font-size: 14px;
+
+    line-height: 1.95;
+  }
+
+  .wishes {
+    grid-template-columns: 1fr;
+  }
+
+  .cake-area {
+    transform:
+      scale(.78);
+
+    transform-origin:
+      top center;
+
+    margin-bottom:
+      -100px;
+  }
+
+  .gift-area {
+    height: 420px;
+  }
+
+  .flowers {
+    transform:
+      translateX(-50%)
+      scale(.75);
+  }
+
+  .gift-box {
+    transform:
+      translateX(-50%)
+      scale(.85);
+  }
+
+  .gift-box:hover {
+    transform:
+      translateX(-50%)
+      scale(.9)
+      translateY(-5px);
+  }
+
+  .gift-message {
+    padding: 20px;
+    font-size: 14px;
+  }
+
+}
+</style>
+</head>
+
+<body>
+
+<!-- =========================
+     AUDIO
+========================= -->
+
+<audio id="birthdayAudio" loop preload="auto">
+  <source src="Lagu.mp3" type="audio/mpeg">
+</audio>
+
+<button
+  class="audio-button"
+  id="audioButton"
+  onclick="toggleAudio()"
+>
+  🎵
+</button>
+
+<div id="hearts"></div>
+
+<div class="container">
+
+<!-- =========================
+     FOTO
+========================= -->
+
+<section class="card photo-section">
+
+  <div class="title">
+
+    <h1>
+      Happy Birthday Annnn❤️
+    </h1>
+
+    <p>
+      Hari ini bukan sekadar hari biasa.
+      Hari ini adalah hari ketika seseorang
+      yang begitu berarti dilahirkan ke dunia.
+    </p>
+
+  </div>
+
+  <div class="photo-frame">
+
+    <!-- GANTI FOTO DI SINI -->
+    <img
+      src="an.jpg"
+      alt="Foto orang tersayang"
+    >
+
+  </div>
+
+  <p class="photo-caption">
+    "Semoga foto ini menjadi salah satu
+    dari banyak kenangan indah yang akan kita ingat. ❤️"
+  </p>
+
+</section>
+
+
+<!-- =========================
+     PEMBUKA
+========================= -->
+
+<section class="card">
+
+  <div class="title">
+
+    <h2>
+      Untuk Kamu 🤍
+    </h2>
+
+    <p>
+      Ada sesuatu yang ingin aku sampaikan
+      di hari spesialmu ini.
+    </p>
+
+  </div>
+
+  <div class="letter">
+
+    <p>
+      Hai kamu. ❤️
+    </p>
+
+    <p>
+      Hari ini adalah hari yang spesial.
+      Bukan hanya karena angka di usiamu bertambah,
+      tetapi karena hari ini mengingatkanku bahwa
+      di dunia ini pernah lahir seseorang yang
+      akhirnya menjadi begitu berarti bagi banyak orang.
+    </p>
+
+    <p>
+      Dan salah satu orang yang bersyukur
+      pernah mengenalmu adalah aku.
+    </p>
+
+    <p class="highlight">
+      Selamat ulang tahun, Annn. 🎂❤️
+    </p>
+
+    <p>
+      Semoga semua hal baik yang kamu doakan
+      diam-diam selama ini perlahan datang kepadamu.
+      Semoga satu per satu keinginan yang kamu simpan
+      di dalam hati menemukan jalannya sendiri.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     LONG TEXT
+========================= -->
+
+<section class="card">
+
+  <div class="title">
+
+    <h2>
+      Sebuah Surat Untukmu Annn💌
+    </h2>
+
+    <p>
+      Bacanya pelan-pelan ya...
+    </p>
+
+  </div>
+
+  <div class="letter">
+
+    <p>
+      Mungkin aku tidak selalu pandai dalam mengatakan
+      apa yang sebenarnya aku rasakan.
+      Kadang ada banyak hal yang ingin disampaikan,
+      tetapi ketika waktunya tiba, kata-kata justru
+      terasa terlalu sedikit.
+    </p>
+
+    <p>
+      Karena itu, hari ini aku ingin mencoba menuliskannya.
+      Bukan karena tulisan ini sempurna,
+      tetapi karena aku ingin kamu tahu bahwa
+      ada banyak hal yang mungkin selama ini
+      belum sempat aku katakan kepadamu.
+    </p>
+
+    <p>
+      Pertama-tama, terima kasih.
+    </p>
+
+    <p>
+      Terima kasih karena sudah hadir di dunia ini.
+      Terima kasih karena pernah menjadi bagian
+      dari hari-hari seseorang seperti aku.
+      Terima kasih untuk semua percakapan,
+      semua cerita, semua tawa,
+      bahkan untuk hal-hal kecil yang mungkin
+      menurutmu tidak berarti apa-apa.
+    </p>
+
+    <p>
+      Kadang kita tidak sadar bahwa kehadiran kita
+      bisa memberikan arti yang besar bagi orang lain.
+      Mungkin bagimu sebuah pesan hanyalah pesan biasa.
+      Sebuah senyuman hanyalah senyuman.
+      Sebuah perhatian kecil hanyalah sesuatu yang sederhana.
+    </p>
+
+    <p>
+      Tetapi bagi seseorang yang menghargaimu,
+      hal-hal kecil itu bisa tinggal jauh lebih lama
+      daripada yang kamu bayangkan.
+    </p>
+
+    <div class="quote">
+      "Tidak semua hal indah harus datang dalam bentuk
+      sesuatu yang besar. Kadang sebuah kehadiran sederhana
+      sudah cukup untuk membuat hari seseorang menjadi lebih baik."
+    </div>
+
+    <p>
+      Aku tidak tahu seperti apa perjalanan hidupmu
+      sebelum aku mengenalmu.
+      Aku tidak tahu semua perjuangan yang pernah kamu lalui.
+      Aku tidak tahu berapa banyak malam yang pernah kamu lewati
+      sambil memikirkan masa depan.
+    </p>
+
+    <p>
+      Tapi aku tahu satu hal:
+      kamu sudah sampai sejauh ini.
+    </p>
+
+    <p>
+      Dan menurutku, itu sesuatu yang patut kamu banggakan.
+    </p>
+
+    <p>
+      Mungkin ada hari ketika kamu merasa tertinggal.
+      Mungkin ada hari ketika kamu melihat orang lain
+      sudah mendapatkan banyak hal sementara kamu
+      merasa masih berada di tempat yang sama.
+    </p>
+
+    <p>
+      Tapi tolong jangan terlalu keras kepada dirimu sendiri.
+    </p>
+
+    <p>
+      Setiap orang memiliki waktunya masing-masing.
+      Ada yang berlari lebih cepat.
+      Ada yang berjalan perlahan.
+      Ada yang harus berhenti beberapa kali
+      hanya untuk mengumpulkan tenaga sebelum melanjutkan.
+    </p>
+
+    <p>
+      Dan tidak apa-apa kalau perjalananmu berbeda.
+    </p>
+
+    <p>
+      Kamu tidak harus memiliki hidup yang sama
+      dengan orang lain agar hidupmu menjadi berarti.
+    </p>
+
+    <p>
+      Kamu tidak harus menjadi sempurna.
+      Kamu tidak harus selalu kuat.
+      Kamu tidak harus selalu tersenyum.
+      Kamu juga tidak harus selalu tahu
+      apa yang akan terjadi besok.
+    </p>
+
+    <p class="highlight">
+      Kamu hanya perlu terus menjadi dirimu sendiri.
+    </p>
+
+    <p>
+      Kalau suatu hari kamu merasa lelah,
+      istirahatlah.
+    </p>
+
+    <p>
+      Kalau suatu hari kamu ingin menangis,
+      menangislah.
+    </p>
+
+    <p>
+      Kalau suatu hari kamu merasa semuanya terlalu berat,
+      jangan merasa bersalah karena membutuhkan waktu
+      untuk memulihkan diri.
+    </p>
+
+    <p>
+      Karena istirahat bukan berarti menyerah.
+      Menangis bukan berarti lemah.
+      Berjalan perlahan bukan berarti gagal.
+    </p>
+
+    <p>
+      Kadang kita hanya perlu memberikan kesempatan
+      kepada diri sendiri untuk bernapas.
+    </p>
+
+    <p>
+      Aku berharap di usia barumu ini,
+      kamu bisa lebih menyayangi dirimu sendiri.
+    </p>
+
+    <p>
+      Jangan hanya sibuk memikirkan bagaimana
+      membuat orang lain bahagia sampai lupa
+      bertanya kepada dirimu sendiri:
+      "Apa yang sebenarnya membuatku bahagia?"
+    </p>
+
+    <p>
+      Aku berharap kamu menemukan jawabannya.
+    </p>
+
+    <p>
+      Aku berharap kamu menemukan tempat
+      di mana kamu tidak perlu berpura-pura menjadi orang lain.
+      Tempat di mana kamu bisa tertawa dengan bebas,
+      bercerita tanpa takut dihakimi,
+      dan menangis tanpa merasa harus meminta maaf.
+    </p>
+
+    <p>
+      Aku berharap kamu bertemu dengan orang-orang
+      yang tidak hanya menyukai sisi terbaikmu,
+      tetapi juga memahami sisi dirimu yang sedang berantakan.
+    </p>
+
+    <p>
+      Orang-orang yang tetap tinggal ketika kamu
+      sedang tidak baik-baik saja.
+    </p>
+
+    <p>
+      Orang-orang yang bisa melihat nilai dirimu
+      bahkan ketika kamu sendiri sedang lupa
+      bagaimana cara melihatnya.
+    </p>
+
+    <div class="quote">
+      "Semoga kamu bertemu dengan seseorang
+      yang membuatmu merasa aman menjadi dirimu sendiri."
+    </div>
+
+    <p>
+      Dan untuk semua impian yang sedang kamu kejar,
+      aku berharap kamu tidak menyerah.
+    </p>
+
+    <p>
+      Mungkin jalannya tidak selalu mudah.
+      Mungkin ada banyak hal yang tidak berjalan
+      sesuai rencana.
+      Mungkin beberapa pintu akan tertutup
+      meskipun kamu sudah mengetuknya berkali-kali.
+    </p>
+
+    <p>
+      Tetapi jangan menganggap satu pintu yang tertutup
+      sebagai akhir dari semuanya.
+    </p>
+
+    <p>
+      Bisa jadi hidup sedang membawamu
+      menuju tempat yang jauh lebih baik.
+    </p>
+
+    <p>
+      Jadi teruslah mencoba.
+      Teruslah belajar.
+      Teruslah bertumbuh.
+      Teruslah bermimpi.
+    </p>
+
+    <p>
+      Tidak perlu terburu-buru.
+    </p>
+
+    <p>
+      Yang penting kamu tidak berhenti.
+    </p>
+
+    <p>
+      Aku juga berharap suatu hari nanti,
+      ketika kamu melihat kembali perjalanan hidupmu,
+      kamu bisa tersenyum dan berkata:
+    </p>
+
+    <div class="quote center">
+      "Ternyata semua perjuangan itu memang layak diperjuangkan."
+    </div>
+
+    <p>
+      Semoga tahun ini menjadi tahun yang berbeda.
+    </p>
+
+    <p>
+      Semoga lebih banyak pagi yang membuatmu
+      bersemangat untuk bangun.
+      Lebih banyak malam yang membuatmu
+      tidur dengan hati tenang.
+      Lebih banyak alasan untuk tersenyum.
+      Lebih banyak orang baik yang datang.
+      Dan lebih sedikit hal yang membuatmu
+      mempertanyakan nilai dirimu sendiri.
+    </p>
+
+    <p>
+      Semoga rezekimu dilancarkan.
+      Semoga kesehatanmu dijaga.
+      Semoga langkahmu dipermudah.
+      Semoga pekerjaan dan pendidikanmu dimudahkan.
+      Semoga semua keluargamu selalu diberikan kesehatan
+      dan kebahagiaan.
+    </p>
+
+    <p>
+      Semoga segala sesuatu yang sedang kamu perjuangkan
+      perlahan menemukan hasilnya.
+    </p>
+
+    <p>
+      Dan semoga ketika kamu mendapatkan sesuatu
+      yang selama ini kamu impikan,
+      kamu masih menjadi seseorang
+      yang rendah hati dan penuh rasa syukur.
+    </p>
+
+    <p>
+      Ada satu hal lagi yang ingin aku katakan.
+    </p>
+
+    <p>
+      Jangan pernah menganggap dirimu tidak penting.
+    </p>
+
+    <p>
+      Ada orang-orang yang senang karena kamu
+      masih ada di dunia ini.
+    </p>
+
+    <p>
+      Ada seseorang yang bahagia ketika melihat senyummu.
+      Ada seseorang yang merasa lebih baik
+      setelah mendengar ceritamu.
+      Ada seseorang yang diam-diam mendoakanmu.
+    </p>
+
+    <p>
+      Dan mungkin,
+      salah satu dari orang itu adalah aku hihihi.
+    </p>
+
+    <p>
+      Aku tidak tahu sampai kapan aku akan menjadi
+      bagian dari perjalananmu.
+      Aku juga tidak tahu seperti apa cerita kita
+      di masa depan.
+    </p>
+
+    <p>
+      Tetapi selama pernah mengenalmu,
+      aku ingin selalu mengingatnya sebagai
+      salah satu bagian yang indah dalam hidupku.
+    </p>
+
+    <p>
+      Kalau suatu hari nanti kita berada di tempat
+      yang berbeda, menjalani kehidupan masing-masing,
+      aku tetap berharap kamu baik-baik saja.
+    </p>
+
+    <p>
+      Aku berharap kamu tetap tersenyum.
+      Tetap mengejar impianmu.
+      Tetap menyayangi dirimu.
+      Dan tetap menjadi seseorang yang baik.
+    </p>
+
+    <p class="highlight">
+      Jadi hari ini, di hari ulang tahunmu,
+      jangan hanya menghitung bertambahnya usia.
+      Ingat juga semua hal yang sudah berhasil kamu lewati.
+    </p>
+
+    <p>
+      Ingat semua malam ketika kamu berpikir
+      bahwa kamu tidak akan sanggup,
+      tetapi ternyata kamu berhasil melewatinya.
+    </p>
+
+    <p>
+      Kamu masih di sini.
+      Kamu masih bertahan.
+      Kamu masih punya kesempatan
+      untuk membuat cerita yang lebih indah.
+    </p>
+
+    <div class="quote center">
+      "Semoga usia baru ini bukan hanya tentang
+      bertambahnya angka, tetapi tentang bertambahnya
+      alasan untuk mencintai kehidupan."
+    </div>
+
+    <p class="center highlight">
+      Selamat ulang tahun Ann Sayangg. 🎂❤️
+    </p>
+
+    <p>
+      Semoga panjang umur.
+      Semoga sehat selalu.
+      Semoga bahagia selalu.
+      Semoga dimudahkan dalam segala urusan.
+      Semoga dilancarkan rezekinya.
+      Semoga cita-citanya tercapai.
+      Semoga semua doa yang belum terkabul
+      mendapatkan waktu terbaik untuk menjadi nyata.
+    </p>
+
+    <p>
+      Dan ketika nanti kamu meniup lilin di atas kue,
+      jangan lupa membuat satu permintaan.
+    </p>
+
+    <p>
+      Cukup simpan di dalam hati.
+      Pejamkan mata.
+      Tarik napas.
+      Dan percaya bahwa masih ada banyak hal baik
+      yang sedang berjalan menuju kepadamu.
+    </p>
+
+    <p class="center">
+      ❤️
+    </p>
+
+    <p class="center highlight">
+      Kamu pantas mendapatkan kebahagiaan.
+    </p>
+
+    <p class="center">
+      Happy Birthday, seseorang yang sangat spesial. Ann. 🎂🌷❤️
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     WISHES
+========================= -->
+
+<section class="card">
+
+  <div class="title">
+
+    <h2>
+      Doa-Doa Kecil Untukmu Sayangg✨
+    </h2>
+
+  </div>
+
+  <div class="wishes">
+
+    <div class="wish">
+      <div class="wish-icon">❤️</div>
+      Semoga hatimu selalu lemah lembut dan dipenuhi
+      kasih sayang dan ketenangan.
+    </div>
+
+    <div class="wish">
+      <div class="wish-icon">🌷</div>
+      Semoga hari-harimu dipenuhi
+      hal-hal kecil yang membuatmu tersenyum.
+    </div>
+
+    <div class="wish">
+      <div class="wish-icon">✨</div>
+      Semoga semua impianmu
+      perlahan menjadi kenyataan.
+    </div>
+
+    <div class="wish">
+      <div class="wish-icon">🫶</div>
+      Semoga kamu selalu dikelilingi
+      orang-orang baik yang tulus kepadamu.
+    </div>
+
+    <div class="wish">
+      <div class="wish-icon">🌼</div>
+      Semoga hidupmu selalu penuh
+      warna warna yang indah 
+      dan kehangatan.
+    </div>
+
+    <div class="wish">
+      <div class="wish-icon">🎂</div>
+      Semoga setiap ulang tahun berikutnya bisa 
+      membawa kebahagiaan yang lebih besar kepadamu.
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     CAKE
+========================= -->
+
+<section class="card cake-section">
+
+  <div class="title">
+
+    <h2>
+      🎂 Kue Untukmu
+    </h2>
+
+    <p>
+      Empat tingkat doa,
+      dua lilin,
+      dan satu harapan:
+      Semoga kamu selalu bahagia Annn. ❤️
+    </p>
+
+  </div>
+
+  <div class="cake-area">
+
+    <div class="cake">
+
+      <div class="layer layer-1">
+        <div class="cream"></div>
+        <div class="decor">
+          🌷 ❤️ 🌼 ❤️ 🌷
+        </div>
+      </div>
+
+      <div class="layer layer-2">
+        <div class="cream"></div>
+        <div class="decor">
+          ❤️ 🌷 ❤️
+        </div>
+      </div>
+
+      <div class="layer layer-3">
+        <div class="cream"></div>
+        <div class="decor">
+          🌼 ❤️ 🌼
+        </div>
+      </div>
+
+      <div class="layer layer-4">
+        <div class="cream"></div>
+        <div class="decor">
+          ❤️ 🌷 ❤️
+        </div>
+      </div>
+
+    </div>
+
+    <div class="candles">
+
+      <div class="candle">
+        <div class="flame">🔥</div>
+        🕯️
+      </div>
+
+      <div class="candle">
+        <div class="flame">🔥</div>
+        🕯️
+      </div>
+
+    </div>
+
+  </div>
+
+  <p class="candle-note">
+    🕯️🕯️ Dua lilin untuk dua harapan:
+    semoga hari-harimu selalu dipenuhi
+    kebahagiaan dan kasih sayang. ❤️
+  </p>
+
+</section>
+
+
+<!-- =========================
+     GIFT
+========================= -->
+
+<section class="card gift-section">
+
+  <div class="title">
+
+    <div class="gift-title">
+      🎁 Ada Satu Kado Untukmu...
+    </div>
+
+    <p>
+      Jangan buru-buru.
+      Klik pelan-pelan untuk membukanya. 🤭❤️
+    </p>
+
+  </div>
+
+  <div class="gift-area">
+
+    <div
+      class="flowers"
+      id="flowers"
+    >
+
+      <div class="tulip tulip-1">
+
+        <div class="tulip-head">
+          🌷
+        </div>
+
+        <div class="stem"></div>
+
+        <div class="leaf left"></div>
+        <div class="leaf right"></div>
+
+      </div>
+
+      <div class="tulip tulip-2">
+
+        <div class="tulip-head">
+          🌷
+        </div>
+
+        <div class="stem"></div>
+
+        <div class="leaf left"></div>
+        <div class="leaf right"></div>
+
+      </div>
+
+      <div class="tulip tulip-3">
+
+        <div class="tulip-head">
+          🌷
+        </div>
+
+        <div class="stem"></div>
+
+        <div class="leaf left"></div>
+        <div class="leaf right"></div>
+
+      </div>
+
+      <div class="tulip tulip-4">
+
+        <div class="tulip-head">
+          🌷
+        </div>
+
+        <div class="stem"></div>
+
+        <div class="leaf left"></div>
+        <div class="leaf right"></div>
+
+      </div>
+
+      <div class="marigold m1">🌼</div>
+      <div class="marigold m2">🌼</div>
+      <div class="marigold m3">🌼</div>
+      <div class="marigold m4">🌼</div>
+
+    </div>
+
+
+    <div
+      class="gift-box"
+      onclick="openGift()"
+    >
+
+      <div class="bow-left"></div>
+      <div class="bow-right"></div>
+
+      <div
+        class="gift-lid"
+        id="giftLid"
+      ></div>
+
+      <div class="gift-body"></div>
+
+      <div class="ribbon-v"></div>
+
+      <div class="ribbon-h"></div>
+
+    </div>
+
+  </div>
+
+  <p id="giftHint">
+    👆 Klik kado untuk membukanya
+  </p>
+
+
+  <div
+    class="gift-message"
+    id="giftMessage"
+  >
+
+    <div class="big-flower">
+      🌷 🌷 🌷 🌷
+    </div>
+
+    <h3>
+      Surprise... 🎁❤️
+    </h3>
+
+    <p>
+      Akhirnya kadonya terbuka.
+    </p>
+
+    <p>
+      Ada empat tangkai tulip di dalamnya.
+      Empat bunga kecil yang sengaja aku letakkan
+      di sini sebagai simbol banyak harapan baik
+      yang ingin aku titipkan untukmu.
+    </p>
+
+    <p>
+      Ada juga bunga tahi ayam atau marigold. 🌼
+      Bunga yang sederhana, tetapi warnanya
+      begitu hangat dan cerah persis seperti senyummu.
+    </p>
+
+    <p>
+      Aku ingin bunga-bunga ini menjadi pengingat
+      bahwa hidupmu juga layak dipenuhi warna warna yang indah.
+    </p>
+
+    <p>
+      Saat hari-harimu sedang indah,
+      nikmatilah.
+    </p>
+
+    <p>
+      Saat hari-harimu sedang berat,
+      percayalah bahwa hari yang lebih baik
+      akan datang.
+    </p>
+
+    <p>
+      Jangan pernah lupa bahwa setelah hujan
+      selalu ada kesempatan untuk melihat langit
+      kembali cerah.
+    </p>
+
+    <p class="highlight">
+      Kamu pantas dicintai.
+      Kamu pantas dihargai.
+      Kamu pantas bahagia.
+    </p>
+
+    <p>
+      Tidak peduli seberapa sulit hari ini,
+      jangan menyerah kepada dirimu sendiri.
+    </p>
+
+    <p>
+      Karena masih ada banyak pagi yang belum kamu lihat,
+      banyak tempat yang belum kamu datangi,
+      banyak mimpi yang belum kamu wujudkan,
+      dan banyak kebahagiaan yang masih belum kamu rasakan.
+    </p>
+
+    <div class="big-flower">
+      🌼 ❤️ 🌷 ❤️ 🌼
+    </div>
+
+    <h3>
+      Selamat ulang tahun Annnn. 🎂❤️
+    </h3>
+
+    <p>
+      Semoga kamu selalu menemukan alasan
+      untuk tersenyum.
+    </p>
+
+    <p>
+      Dan semoga ketika kamu merasa sendirian,
+      kamu selalu ingat bahwa ada orang-orang
+      yang benar-benar peduli kepadamu.
+    </p>
+
+    <p class="highlight">
+      Termasuk aku hihihi. ❤️
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     FINAL
+========================= -->
+
+<section class="card">
+
+  <div class="final-heart">
+    ❤️
+  </div>
+
+  <div class="final-text">
+
+    <h2
+      style="
+        font-family:Pacifico;
+        font-size:clamp(32px,8vw,50px);
+        margin:15px 0 25px;
+      "
+    >
+      Happy Birthday Annnn
+    </h2>
+
+    <p>
+      Semoga usia baru ini menjadi
+      awal dari banyak hal indah untukmu dan keluargamu.
+    </p>
+
+    <br>
+
+    <p>
+      Semoga langkahmu selalu dipermudah,
+      hatimu selalu dikuatkan,
+      dan senyummu selalu punya alasan
+      untuk tetap ada.
+    </p>
+
+    <br>
+
+    <p>
+      Kalau suatu hari kamu lupa
+      betapa berharganya dirimu,
+      kembalilah membaca tulisan ini.
+    </p>
+
+    <br>
+
+    <p class="highlight">
+      Kamu berharga.
+      Kamu berarti.
+      Kamu pantas bahagia.
+    </p>
+
+    <br>
+
+    <p>
+      Jangan pernah berhenti bermimpi.
+      Jangan pernah berhenti berharap.
+      Dan jangan pernah berhenti menjadi
+      versi terbaik dari dirimu sendiri.
+    </p>
+
+    <br>
+
+    <p>
+      <strong>
+        Selamat ulang tahun untukmu,
+        manusia yang sangat spesial. 🎂🌷❤️
+      </strong>
+    </p>
+
+  </div>
+
+</section>
+
+
+<footer>
+
+  Dibuat dengan penuh rasa sayang ❤️<br>
+  Untuk seseorang yang begitu spesial ♡ .
+
+</footer>
+
+</div>
+
+
+
+
+<script>
+
+/* =========================
+   AUDIO
+========================= */
+
+const birthdayAudio =
+  document.getElementById("birthdayAudio");
+
+const audioButton =
+  document.getElementById("audioButton");
+
+let audioPlaying = false;
+
+function playBirthdayAudio() {
+
+  birthdayAudio
+    .play()
+    .then(() => {
+
+      audioPlaying = true;
+
+      audioButton.innerHTML = "🔊";
+
+    })
+    .catch(() => {
+
+      audioPlaying = false;
+
+    });
+
+}
+
+function toggleAudio() {
+
+  if (birthdayAudio.paused) {
+
+    playBirthdayAudio();
+
+  } else {
+
+    birthdayAudio.pause();
+
+    audioPlaying = false;
+
+    audioButton.innerHTML = "🎵";
+
+  }
+
+}
+
+
+/*
+   Browser biasanya memblokir autoplay.
+   Musik akan mulai setelah pengunjung
+   melakukan interaksi pertama.
+*/
+
+document.addEventListener(
+  "click",
+  () => {
+
+    if (!audioPlaying) {
+      playBirthdayAudio();
+    }
+
+  },
+  { once: true }
+);
+
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+const heartContainer =
+  document.getElementById("hearts");
+
+const heartSymbols = [
+  "❤️",
+  "💕",
+  "💗",
+  "💖",
+  "💓",
+  "💘",
+  "🌷",
+  "🌼"
+];
+
+function createHeart() {
+
+  const heart =
+    document.createElement("div");
+
+  heart.className =
+    "heart";
+
+  heart.innerHTML =
+    heartSymbols[
+      Math.floor(
+        Math.random() *
+        heartSymbols.length
+      )
+    ];
+
+  heart.style.left =
+    Math.random() * 100 + "vw";
+
+  heart.style.fontSize =
+    (15 + Math.random() * 25) + "px";
+
+  heart.style.animationDuration =
+    (5 + Math.random() * 8) + "s";
+
+  heartContainer.appendChild(heart);
+
+  setTimeout(() => {
+    heart.remove();
+  }, 14000);
+
+}
+
+setInterval(
+  createHeart,
+  450
+);
+
+
+/* =========================
+   OPEN GIFT
+========================= */
+
+let giftOpened = false;
+
+function openGift() {
+
+  if (giftOpened) return;
+
+  giftOpened = true;
+
+  const lid =
+    document.getElementById("giftLid");
+
+  const flowers =
+    document.getElementById("flowers");
+
+  const hint =
+    document.getElementById("giftHint");
+
+  const message =
+    document.getElementById("giftMessage");
+
+
+  lid.classList.add("open");
+
+  hint.innerHTML =
+    "✨ Kadonya terbuka... ❤️";
+
+
+  setTimeout(() => {
+
+    flowers.classList.add("show");
+
+    createFlowerExplosion();
+
+    createConfetti();
+
+  }, 700);
+
+
+  setTimeout(() => {
+
+    message.style.display =
+      "block";
+
+    message.scrollIntoView({
+      behavior: "smooth",
+      block: "center"
+    });
+
+  }, 1900);
+
+}
+
+
+/* =========================
+   FLOWER EXPLOSION
+========================= */
+
+function createFlowerExplosion() {
+
+  const symbols = [
+    "🌷",
+    "🌷",
+    "🌷",
+    "🌷",
+    "🌼",
+    "🌼",
+    "🌼",
+    "🌼",
+    "❤️",
+    "💕",
+    "✨"
+  ];
+
+
+  for(let i = 0; i < 45; i++) {
+
+    const item =
+      document.createElement("div");
+
+    item.innerHTML =
+      symbols[
+        Math.floor(
+          Math.random() *
+          symbols.length
+        )
+      ];
+
+    item.style.position =
+      "fixed";
+
+    item.style.left =
+      (30 + Math.random() * 40) + "vw";
+
+    item.style.top =
+      "45vh";
+
+    item.style.fontSize =
+      (18 + Math.random() * 24) + "px";
+
+    item.style.zIndex =
+      "9999";
+
+    item.style.pointerEvents =
+      "none";
+
+    document.body.appendChild(item);
+
+    const x =
+      (Math.random() - .5) * 600;
+
+    const y =
+      (Math.random() - .5) * 550;
+
+    item.animate(
+
+      [
+        {
+          transform:
+            "translate(0,0) scale(.2)",
+          opacity: 0
+        },
+
+        {
+          transform:
+            "translate(0,-80px) scale(1)",
+          opacity: 1
+        },
+
+        {
+          transform:
+            `translate(${x}px,${y}px)
+             rotate(${Math.random()*720}deg)
+             scale(.8)`,
+          opacity: 0
+        }
+
+      ],
+
+      {
+        duration:
+          2000 +
+          Math.random() * 1800,
+
+        easing:
+          "cubic-bezier(.2,.8,.3,1)"
+      }
+
+    );
+
+    setTimeout(() => {
+      item.remove();
+    }, 4500);
+
+  }
+
+}
+
+
+/* =========================
+   CONFETTI
+========================= */
+
+function createConfetti() {
+
+  const colors = [
+    "#ff1744",
+    "#ffffff",
+    "#ffd166",
+    "#ff8fab",
+    "#cdb4db",
+    "#90dbf4"
+  ];
+
+
+  for(let i = 0; i < 120; i++) {
+
+    const confetti =
+      document.createElement("div");
+
+    confetti.className =
+      "confetti";
+
+    confetti.style.left =
+      Math.random() * 100 + "vw";
+
+    confetti.style.background =
+      colors[
+        Math.floor(
+          Math.random() *
+          colors.length
+        )
+      ];
+
+    document.body.appendChild(confetti);
+
+    const duration =
+      2000 +
+      Math.random() * 3000;
+
+    confetti.animate(
+
+      [
+        {
+          transform:
+            "translateY(0) rotate(0)",
+          opacity: 1
+        },
+
+        {
+          transform:
+            `translateY(110vh)
+             rotate(${Math.random()*720}deg)`,
+          opacity: 0
+        }
+
+      ],
+
+      {
+        duration: duration,
+
+        easing:
+          "cubic-bezier(.2,.8,.3,1)"
+      }
+
+    );
+
+    setTimeout(() => {
+      confetti.remove();
+    }, duration);
+
+  }
+
+}
+
+
+/* =========================
+   OPENING CONFETTI
+========================= */
+
+window.addEventListener(
+  "load",
+  () => {
+
+    setTimeout(() => {
+      createConfetti();
+    }, 1000);
+
+  }
+);
+
+</script>
+
+</body>
+</html>
